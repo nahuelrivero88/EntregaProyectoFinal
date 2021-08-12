@@ -1,0 +1,29 @@
+.contenidoCuenta {
+  background-color: rgba(177, 177, 177, 0.596);
+}
+.contenidoCuenta .row {
+  padding: 2rem;
+  margin: 1,5rem;
+}
+.contenidoCuenta .card {
+  border: 1px solid $warning;
+}
+.contenidoCuenta .tada {
+  background-color: $warning;
+  color: black;
+  border: 1px solid black;
+}
+.tada:hover {
+  background-color: rgb(228, 191, 69);
+  color: black;
+}
+.contenidoCuenta h1 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  padding-top: 2rem;
+  text-shadow: $sombraTexto;
+}
+

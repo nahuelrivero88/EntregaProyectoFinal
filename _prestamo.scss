@@ -1,0 +1,54 @@
+.card-body h3 {
+  font-family: monospace;
+  font-weight: 700;
+  color: #04045a;
+}
+.formularioPrestamo {
+  font-size: 12px;
+  background-image: linear-gradient(
+    to top,
+    rgb(243, 243, 243),
+    rgba(97, 138, 202, 0.932)
+  );
+  padding: 1rem;
+  margin-top: auto;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formularioPrestamo h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 800;
+  font-family: monospace;
+}
+.contenidoPrestamo .card-group {
+  gap:2rem;
+  padding: 1rem;
+}
+.contenidoPrestamo .card {
+  border-color: black;
+  border: outset;
+  box-shadow: 0 0 10px grey;
+}
+// Animación entrada
+@keyframes giroY{
+  0%{
+      opacity:0.5;
+      transform: perspective(250px) rotateY(180deg);
+  }
+  40%{
+      transform: perspective(250px) rotateY(-20deg);
+  }
+  70%{
+      transform: perspective(250px) rotateY(20deg);
+  }
+  90%{
+      transform: perspective(250px) rotateY(-10deg);
+  }
+}
+.giroY {
+  animation: 1s giroY 1;
+  backface-visibility: visible;
+}

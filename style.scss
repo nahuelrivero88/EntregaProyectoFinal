@@ -1,0 +1,99 @@
+$primary: rgb(0,0,0);
+$negroyblancobg: linear-gradient(
+  to top,
+  rgba(69, 68, 71, 0.822),
+  rgba(253, 255, 253, 0.979)
+);
+$sombraTexto: 0 0 10px white;
+$widht100: 100%;
+$Basic: rgba(14, 14, 129, 0.76);
+$Gold:#7d6419;
+$Platinum: #4c4b48e8;
+$colorFormContacto: rgb(160, 12, 160);
+$margenTop: 2rem;
+
+@import "./scss/bootstrap.scss";
+@import "paginaPrincipal";
+@import "tarjeta";
+@import "prestamo";
+@import "contacto";
+@import "cuenta";
+@import "iniciarSesion";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: gba(224, 221, 167, 0.856);
+}
+
+// Pie de pagina
+footer {
+  margin-top: ($margenTop)-1;
+  background-image: $negroyblancobg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.redesSociales {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.telefonoAtencion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  margin-top: ($margenTop)-1;
+}
+
+// Navegador
+header {
+  nav {
+    background-image: $negroyblancobg;
+  }
+}
+.navegador {
+  position: sticky;
+  top: 0px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+  text-shadow: $sombraTexto;
+}
+.inicioSesion {
+  .btn{
+    background-color: black;
+    border-radius: 10%;
+    border-color: rgba(255, 255, 255, 0.342);
+    box-shadow: rgba(255, 255, 255, 0.342);
+  }
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color:black;
+  }
+}
+.gap-2 {
+  gap: 0.2rem !important;
+}
+.d-grid, .nav-link{
+  display: flex !important;
+  justify-content: center;
+}
+// Titulo secciones
+.tituloSeccion {
+  background-image: url(./Multimedia/prestamoOnline.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+.tituloSeccion h1 {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+  color: #f8f9fa;
+  text-shadow: 0 0 10px #9815ea;
+}

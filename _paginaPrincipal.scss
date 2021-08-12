@@ -1,0 +1,76 @@
+/* Portada Inicio */
+#portada {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Multimedia/portada2.jpg);
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tituloPrincipal,
+  .slogan {
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1rem;
+    text-shadow: $sombraTexto;
+    padding-top: 2rem;
+  }
+  .tituloPrincipal {
+    font-size: 70px;
+  }
+  .slogan {
+    font-size: 20px;
+  }
+  /* Contendio Inicio */
+  .tituloNovedades {
+    background-image: linear-gradient(
+      to top,
+      rgb(121, 201, 204),
+      rgba(235, 235, 235, 0.932)
+    );
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tituloNovedades h2 {
+    color: black;
+    font-family: sans-serif;
+  }
+  .col .card {
+    background-color: rgb(154, 184, 241);
+  }
+  .row {
+    align-items: stretch;
+  }
+  .card-title .btn {
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-radius: 0%;
+  }
+  .card-title .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: black;
+    border-radius: 20%;
+  }
+  .cont1 {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .carousel-inner h5,
+  .carousel-inner p {
+    color: black;
+    text-shadow: 0 0 10px white;
+    font-weight: 900;
+  }
+  .col {
+    padding-top: 1rem;
+  }
+  

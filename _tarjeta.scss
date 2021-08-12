@@ -1,0 +1,146 @@
+.contenedorTarjetas {
+  background-image: linear-gradient(45deg,rgb(146, 146, 235), #4d616e,#78bfd4, rgba(253, 255, 253, 0.979));
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagenTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 0px 0px 0px;
+  margin-right: -20%;
+}
+.contenedorTarjetas .cardContenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+// Medias querys
+@media only screen and (max-width: 538px) {
+	.contenedorTarjetas .cardContenido {
+		display: flex;
+    flex-direction: column;
+    padding: 2rem;
+	}
+  .imagenTarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 539px){
+	.contenedorTarjetas .cardContenido {
+		display: flex;
+    padding: 2rem;
+	}
+  .imagenTarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row-cols-sm-1 > * {
+    width:100%;
+  }
+}
+@media only screen and (min-width: 1170px){
+	.contenedorTarjetas .cardContenido {
+		display: flex;
+    padding: 2rem;
+	}
+  .imagenTarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .row-cols-lg-2 > * {
+    width: 50%;
+  }
+}
+// Botones e imagen
+.botonesTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+.botonesTarjeta {
+  .btn-outline-primary {
+    background-color: #dee2e6;
+  }
+}
+.botonesTarjeta {
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.movimientoImg {
+  animation: movimiento 2s linear infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// Cards
+.cardBasic {
+  border: 1px solid $Basic;
+  .card-header {
+    background-color: white;
+    color: $Basic;
+    font-weight: 900;
+    border: double;
+  }
+}
+.cardGold {
+  border: 1px solid $Gold;
+  .card-header {
+    background-color: white;
+    color: $Gold;
+    font-weight: 900;
+    border: double;
+  }
+}
+.cardPlatinum {
+  border: 1px solid $Platinum;
+  .card-header {
+    background-color: white;
+    color: $Platinum;
+    font-weight: 900;
+    border: double;
+  }
+}
+.card .card-body {
+  background-color: white;
+  color: black;
+}
+.cardContenido .card {
+  width: inherit;
+}
+.contenedorTarjetas h5 {
+  font-family: monospace;
+  font-weight: 600;
+}
+//MAP
+$titulos-tarjetas:(
+    basic:#bfeaf3,
+    gold:rgb(236, 222, 156),
+    platinum: rgba(251, 245, 249, 0.89) 
+);
+//Bucle @each
+@each $color, $value in $titulos-tarjetas {
+    .cards__titulo--#{$color} {
+      background-color: $value !important;
+    }
+}
