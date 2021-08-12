@@ -15,7 +15,6 @@
     font-weight: 900;
     text-align: center;
     font-family: sans-serif;
-    line-height: 1rem;
     text-shadow: $sombraTexto;
     padding-top: 2rem;
   }
@@ -72,5 +71,11 @@
   }
   .col {
     padding-top: 1rem;
+  }
+  @media only screen and (max-width: 420px) {
+    .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar {
+      display: flex;
+      justify-content: center;
+    }
   }
   

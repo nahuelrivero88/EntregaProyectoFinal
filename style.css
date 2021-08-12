@@ -11525,7 +11525,6 @@ fieldset:disabled .btn {
   font-weight: 900;
   text-align: center;
   font-family: sans-serif;
-  line-height: 1rem;
   text-shadow: 0 0 10px white;
   padding-top: 2rem;
 }
@@ -11597,6 +11596,17 @@ fieldset:disabled .btn {
 
 .col {
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl, .navbar > .container-sm, .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contenedorTarjetas {
