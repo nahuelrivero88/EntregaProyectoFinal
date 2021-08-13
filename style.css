@@ -12007,15 +12007,10 @@ fieldset:disabled .btn {
   border: 1px solid #ffc107;
 }
 
-.contenidoCuenta .tada {
+.contenidoCuenta .shadow-radial {
   background-color: #ffc107;
   color: black;
   border: 1px solid black;
-}
-
-.tada:hover {
-  background-color: #e4bf45;
-  color: black;
 }
 
 .contenidoCuenta h1, .contenidoCuenta .h1 {
@@ -12030,6 +12025,84 @@ fieldset:disabled .btn {
   font-weight: 900;
   padding-top: 2rem;
   text-shadow: 0 0 10px white;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.botonEspecial a {
+  font-family: Roboto,sans-serif;
+  font-weight: 900;
+  color: #000;
+  text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.h-button {
+  background: #e1e1e2;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  -webkit-box-shadow: -6px -6px 15px #333232;
+          box-shadow: -6px -6px 15px #333232;
+}
+
+.h-button span {
+  display: inline-block;
+  min-width: .3em;
+  text-transform: uppercase;
+  -webkit-transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  opacity: 0;
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+}
+
+.h-button:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.h-button:focus:before, .h-button:hover:before {
+  opacity: 0;
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+}
+
+.h-button:focus span, .h-button:hover span {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.h-button:focus span:nth-child(1), .h-button:hover span:nth-child(1) {
+  -webkit-transition-delay: .025s;
+          transition-delay: .025s;
+}
+
+.h-button:focus span:nth-child(2), .h-button:hover span:nth-child(2) {
+  -webkit-transition-delay: .05s;
+          transition-delay: .05s;
+}
+
+.h-button:focus span:nth-child(3), .h-button:hover span:nth-child(3) {
+  -webkit-transition-delay: .075s;
+          transition-delay: .075s;
 }
 
 .bodyFormSesion {
