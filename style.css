@@ -11945,7 +11945,7 @@ fieldset:disabled .btn {
 }
 
 .contact .head {
-  background-color: #a00ca0;
+  background-color: #a01d0c;
   color: white;
   border-radius: 5px;
   margin-top: -40px;
@@ -11967,7 +11967,7 @@ fieldset:disabled .btn {
   left: 50%;
   width: 0;
   height: 2px;
-  background-color: #a00ca0;
+  background-color: #a01d0c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -11980,7 +11980,7 @@ fieldset:disabled .btn {
 }
 
 .btn1 {
-  background-color: #a00ca0;
+  background-color: #a01d0c;
   color: white;
   outline: none;
   border: none;
