@@ -11828,7 +11828,7 @@ fieldset:disabled .btn {
   background-color: rgba(251, 245, 249, 0.89) !important;
 }
 
-.button {
+.boton {
   position: relative;
   padding: 1em 1.5em;
   border: none;
@@ -11839,11 +11839,11 @@ fieldset:disabled .btn {
   margin: 1em .8em;
 }
 
-.button.type2 {
+.boton.lineas {
   color: black;
 }
 
-.button.type2.type2:after, .button.type2.type2:before {
+.boton.lineas.lineas:after, .boton.lineas.lineas:before {
   content: "";
   display: block;
   position: absolute;
@@ -11858,13 +11858,13 @@ fieldset:disabled .btn {
           transform: scale(0.85);
 }
 
-.button.type2.type2:hover:before {
+.boton.lineas.lineas:hover:before {
   top: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.button.type2.type2:hover:after {
+.boton.lineas.lineas:hover:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
