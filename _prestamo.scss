@@ -3,26 +3,6 @@
   font-weight: 700;
   color: #04045a;
 }
-.formularioPrestamo {
-  font-size: 12px;
-  background-image: linear-gradient(
-    to top,
-    rgb(243, 243, 243),
-    rgba(97, 138, 202, 0.932)
-  );
-  padding: 1rem;
-  margin-top: auto;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.formularioPrestamo h1 {
-  font-size: 25px;
-  color: white;
-  font-weight: 800;
-  font-family: monospace;
-}
 .contenidoPrestamo .card-group {
   gap:2rem;
   padding: 1rem;
@@ -30,7 +10,10 @@
 .contenidoPrestamo .card {
   border-color: black;
   border: outset;
-  box-shadow: 0 0 10px grey;
+  box-shadow: -5px -5px 10px grey;
+}
+.btn-info {
+  background-image: linear-gradient(45deg,rgb(146, 146, 235), #4d616e,#78bfd4, rgba(253, 255, 253, 0.979));
 }
 // Animación entrada
 @keyframes giroY{
@@ -52,3 +35,57 @@
   animation: 1s giroY 1;
   backface-visibility: visible;
 }
+
+// Efecto Boton
+.button-container-1  {
+  position:relative;
+  height:2.5rem;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1rem;
+  overflow:hidden;
+  border:1px solid;
+  font-family:Lato,sans-serif;
+  font-weight:300;
+  font-size:20px;
+  transition:.5s;
+  box-shadow: -3px -3px 10px #444444;
+}
+.button-container-1 button {
+  width:101%;
+  height:100%;
+  font-family:Lato,sans-serif;
+  font-weight:300;
+  font-size:20px;
+  background:#000;
+  -webkit-mask:url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);mask:url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+  -webkit-mask-size:2300% 100%;mask-size:2300% 100%;
+  border:none;
+  color:#fff;cursor:pointer;
+  -webkit-animation:ani2 .7s steps(22) forwards;
+  animation:ani2 .7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation:ani .7s steps(22) forwards;
+  animation:ani .7s steps(22) forwards;
+}
+.mas {
+  color:#000;
+  text-align:center;
+  width:101%;
+  font-family:Lato,sans-serif;
+  font-weight:300;
+  position:absolute;
+  font-size:20px;
+  overflow:hidden;
+  display: block;
+  align-items: center;
+}
+@-webkit-keyframes ani{from{-webkit-mask-position:0 0;mask-position:0 0}
+to{-webkit-mask-position:100% 0;mask-position:100% 0}}
+@keyframes ani{from{-webkit-mask-position:0 0;mask-position:0 0}
+to{-webkit-mask-position:100% 0;mask-position:100% 0}}
+@-webkit-keyframes ani2{from{-webkit-mask-position:100% 0;mask-position:100% 0}
+to{-webkit-mask-position:0 0;mask-position:0 0}}
+@keyframes ani2{from{-webkit-mask-position:100% 0;mask-position:100% 0}
+to{-webkit-mask-position:0 0;mask-position:0 0}}
