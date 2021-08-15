@@ -17,7 +17,7 @@
   justify-content: space-between;
   margin-top: 2rem;
 }
-// Medias querys
+// Medias queries
 @media only screen and (max-width: 538px) {
 	.contenedorTarjetas .cardContenido {
 		display: flex;
@@ -62,6 +62,7 @@
 .botonesTarjeta {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   margin: 2rem;
   padding: 1rem;
 }

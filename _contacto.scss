@@ -21,15 +21,15 @@
   width: 100%;
   padding: 7px 0;
   border-bottom: 1px solid #ccc;
-}
-.effect-1 ~ .Focus-border {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: $colorFormContacto;
-  transition: 0.4s;
+  .Focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $colorFormContacto;
+    transition: 0.4s;
+  }
 }
 .effect-1:focus ~ .Focus-border {
   width: 100%;
@@ -44,7 +44,8 @@
   border-radius: 5px;
   height: 40px;
   width: 145px;
-}.btn1:hover {
+}
+.btn1:hover {
   -webkit-box-shadow: -1px 9px 27px -8px rgba(235,23,235,1);
   -moz-box-shadow: -1px 9px 27px -8px rgba(235,23,235,1);
   box-shadow:-1px 9px 27px -8px rgba(235,23,235,1) ;

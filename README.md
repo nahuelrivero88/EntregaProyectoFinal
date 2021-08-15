@@ -2,7 +2,7 @@
 Entrega proyecto final - CoderHouse
 
 Página Bancaria que ofrece tres grandes productos: Tarjetas, Préstamos y Cuentas.
-Al ser una página institucional busque mostrar los conocimientos adquiridos pero manteniendo un diseño sobrio, funcional y serio.
+Al ser una página institucional busque mostrar los conocimientos adquiridos pero manteniendo un diseño sobrio, funcional, de facil acceso y navegación .
 
 Diferentes personalizaciones de botones buscando ejemplos en internet y amoldado siempre a mi gusto.
 Uso de Map y Bucle @each en la sección de Tarjetas (_tarjetas.scss)

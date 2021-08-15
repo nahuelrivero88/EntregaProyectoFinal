@@ -11541,7 +11541,7 @@ fieldset:disabled .btn {
 .tituloNovedades {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#79c9cc), to(rgba(235, 235, 235, 0.932)));
   background-image: linear-gradient(to top, #79c9cc, rgba(235, 235, 235, 0.932));
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11730,6 +11730,9 @@ fieldset:disabled .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 2rem;
   padding: 1rem;
 }
@@ -11891,6 +11894,34 @@ fieldset:disabled .btn {
   background-image: linear-gradient(45deg, #9292eb, #4d616e, #78bfd4, rgba(253, 255, 253, 0.979));
 }
 
+@media only screen and (min-width: 576px) {
+  .contenidoPrestamo .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contenidoPrestamo .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+  }
+}
+
 @-webkit-keyframes giroY {
   0% {
     opacity: 0.5;
@@ -11946,11 +11977,11 @@ fieldset:disabled .btn {
   margin-bottom: 1rem;
   overflow: hidden;
   border: 1px solid;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 20px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-box-shadow: -3px -3px 10px #444444;
           box-shadow: -3px -3px 10px #444444;
 }
@@ -11958,7 +11989,7 @@ fieldset:disabled .btn {
 .button-container-1 button {
   width: 101%;
   height: 100%;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 20px;
   background: #000;
@@ -11982,7 +12013,7 @@ fieldset:disabled .btn {
   color: #000;
   text-align: center;
   width: 101%;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 300;
   position: absolute;
   font-size: 20px;
@@ -12064,7 +12095,7 @@ fieldset:disabled .btn {
   border-bottom: 1px solid #ccc;
 }
 
-.effect-1 ~ .Focus-border {
+.effect-1 .Focus-border {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -12101,21 +12132,6 @@ fieldset:disabled .btn {
   background-color: rgba(177, 177, 177, 0.596);
 }
 
-.contenidoCuenta .row {
-  padding: 2rem;
-  margin: 1,5rem;
-}
-
-.contenidoCuenta .card {
-  border: 1px solid #ffc107;
-}
-
-.contenidoCuenta .shadow-radial {
-  background-color: #ffc107;
-  color: black;
-  border: 1px solid black;
-}
-
 .contenidoCuenta h1, .contenidoCuenta .h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12130,6 +12146,15 @@ fieldset:disabled .btn {
   text-shadow: 0 0 10px white;
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.contenidoCuenta .row {
+  padding: 2rem;
+  margin: 1,5rem;
+}
+
+.contenidoCuenta .card {
+  border: 1px solid #ffc107;
 }
 
 .botonEspecial a {

@@ -31,8 +31,7 @@
       rgb(121, 201, 204),
       rgba(235, 235, 235, 0.932)
     );
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -72,6 +71,7 @@
   .col {
     padding-top: 1rem;
   }
+  // Media queries
   @media only screen and (max-width: 420px) {
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar {
       display: flex;
